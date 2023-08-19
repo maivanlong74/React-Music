@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { memo, useContext, useEffect, useState } from "react";
 import "./ListMusic.scss"
 import { AiOutlineDownload } from "react-icons/ai";
 import { Songs } from "../../../Connect/Context";
@@ -45,4 +45,4 @@ const ListMusic = () => {
     )
 }
 
-export default ListMusic;
+export default memo(ListMusic);

@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { MdSearch, MdUpload } from "react-icons/md";
 import { TfiArrowLeft, TfiArrowRight, TfiSettings, TfiUser } from "react-icons/tfi";
 import "./Nav.scss"
@@ -41,4 +42,4 @@ const NavBody = () => {
     )
 }
 
-export default NavBody;
+export default memo(NavBody);

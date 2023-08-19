@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { memo, useContext, useState } from "react";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import { Songs } from "../../Connect/Context";
@@ -33,4 +33,4 @@ const Playing = () => {
     )
 }
 
-export default Playing;
+export default memo(Playing);

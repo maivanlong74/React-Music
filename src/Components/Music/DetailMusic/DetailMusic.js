@@ -1,5 +1,5 @@
 import "./DetailMusic.scss"
-import { React, useContext, useEffect, useState } from 'react';
+import { memo, React, useContext, useEffect, useState } from 'react';
 import { Songs } from "../../../Connect/Context";
 
 const DetailMusic = () => {
@@ -42,4 +42,4 @@ const DetailMusic = () => {
     )
 }
 
-export default DetailMusic;
+export default memo(DetailMusic);

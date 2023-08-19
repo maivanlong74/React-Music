@@ -1,3 +1,4 @@
+import { memo } from "react";
 import "./Header.scss"
 import { 
     BsFillChatDotsFill, 
@@ -24,7 +25,7 @@ const Header = () => {
                 <div className="menu-a menu">
                     <ul>
                         <li>
-                            <a href="">
+                            <a href={"khampha"}>
                                 <BsFillDiamondFill />
                                 Khám phá
                             </a>
@@ -42,7 +43,7 @@ const Header = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href={"thuvien"}>
                                 <BsFillFolderFill />
                                 Thư viện
                             </a>
@@ -80,4 +81,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default memo(Header);
