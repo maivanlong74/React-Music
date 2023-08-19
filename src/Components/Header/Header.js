@@ -1,4 +1,5 @@
 import { memo } from "react";
+import { Link } from "react-router-dom";
 import "./Header.scss"
 import { 
     BsFillChatDotsFill, 
@@ -25,50 +26,50 @@ const Header = () => {
                 <div className="menu-a menu">
                     <ul>
                         <li>
-                            <a href={"khampha"}>
+                            <Link to={""}>
                                 <BsFillDiamondFill />
                                 Khám phá
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="">
+                            <Link to={""}>
                                 <BsFillChatDotsFill />
                                 Chat
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="">
+                            <Link to={""}>
                                 <BsFillFileEarmarkMusicFill />
                                 Radio
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href={"thuvien"}>
+                            <Link to={"thuvien"}>
                                 <BsFillFolderFill />
                                 Thư viện
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
                 <div className="menu-b menu">
                     <ul>
                         <li>
-                            <a href="">
+                            <Link to={""}>
                                 <BsMusicNoteList />
                                 Bảng xếp hạng
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="">
+                            <Link to={""}>
                                 <BsUiRadiosGrid />
                                 Các thể loại
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="">
+                            <Link to={""}>
                                 <BsStar />
                                 Top 100
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

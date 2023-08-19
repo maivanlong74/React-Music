@@ -1,6 +1,6 @@
 export const ROUTER = {
     USER: {
-        KHAMPHA: "khampha",
+        KHAMPHA: "",
         THUVIEN: "thuvien"
     }
 }
