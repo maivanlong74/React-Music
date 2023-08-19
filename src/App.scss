@@ -1,0 +1,53 @@
+@use "sass:map";
+@import "./Style/Theme.scss";
+
+.App{
+    height: 100vh;
+    display: flex;
+    background: map-get($theme-colors, "bl-1" );
+
+    .header{
+        background: map-get($theme-colors, "bl-2");
+        width: 20%;
+        position: relative;
+        border-right: 6px solid black;
+    }
+
+    .Content-body{
+        width: 80%;
+        position: relative;
+
+        .Header-Body{
+            height: 10%;
+        }
+
+        .Body-Body{
+            height: 90%;
+
+            .List-Music{
+                height: 80%;
+                display: flex;
+
+                .detail-music{
+                    width: 40%;
+                    height: 100%;
+                }
+
+                .list-music{
+                    width: 60%;
+                    height: 100%;
+                }
+            }
+
+            .Play-Music{
+                height: 20%;
+                display: flex;
+                background-color: black;
+
+                .rhap_container{
+                    background: none !important;
+                }
+            }
+        }
+    }
+}

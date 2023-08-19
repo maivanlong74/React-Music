@@ -1,0 +1,97 @@
+.header {
+    .Top-content {
+        height: 15%;
+        display: flex;
+
+        .Logo {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        .Title {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                font-size: 30px;
+                color: wheat;
+                font-family: 'Pacifico', cursive;
+            }
+        }
+    }
+
+    .List-menu {
+        height: 65%;
+
+        .menu {
+            ul {
+                list-style: none;
+                height: 100%;
+
+                li {
+                    height: 8vh;
+
+                    a {
+                        display: flex;
+                        height: 100%;
+                        align-items: center;
+                        padding-left: 40px;
+                        color: wheat;
+                        text-decoration: none;
+                        column-gap: 20px;
+                        border-radius: 10px;
+                    }
+
+                    a:hover {
+                        background: #2c3e50;
+                        color: yellow;
+                    }
+                }
+            }
+        }
+
+        .menu-a {
+            height: 60%;
+            border-bottom: 1px solid rgb(82, 79, 79);
+        }
+
+        .menu-b {
+            height: 40%;
+        }
+    }
+
+    .Botton-account {
+        height: 13%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            height: 35px;
+            width: 150px;
+            border-radius: 10px;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: rgb(22, 22, 22);
+            color: yellow;
+        }
+    }
+
+    .hr-menu {
+        width: 70%;
+        color: yellow;
+        border: 0.5px solid;
+    }
+}
