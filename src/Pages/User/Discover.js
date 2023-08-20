@@ -1,7 +1,7 @@
 import { memo } from "react";
-import DetailMusic from "../../Components/Music/DetailMusic/DetailMusic";
-import ListMusic from "../../Components/Music/ListMusic/ListMusic";
-import Playing from "../../Components/Music/Playing";
+import DetailMusic from "../../Components/Discover/DetailMusic/DetailMusic";
+import ListMusic from "../../Components/Discover/ListMusic/ListMusic";
+import Playing from "../../Components/Discover/Playing";
 
 const Discover = () => {
 

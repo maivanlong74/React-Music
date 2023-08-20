@@ -1,7 +1,7 @@
 import { memo } from "react";
-import Header from "../../../Components/Header/Header";
+import Header from "../../../Components/Default/Header/Header";
 import "../../../Style/App.scss"
-import NavBody from "../../../Components/NavBody/Nav";
+import NavBody from "../../../Components/Default/NavBody/Nav";
 import { Songs } from "../../../Connect/Context"
 import DataSongs from "../../../Data/songs.json"
 import { useState } from "react";
