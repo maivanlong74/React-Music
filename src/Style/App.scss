@@ -1,68 +1,68 @@
 @use "sass:map";
 @import "./Theme.scss";
 
-.App{
+.App {
     height: 100vh;
     display: flex;
-    background: map-get($theme-colors, "bl-1" );
+    background: map-get($theme-colors, "bl-1");
 
-    .header{
+    .header {
         background: map-get($theme-colors, "bl-2");
         width: 20%;
         position: relative;
         border-right: 6px solid black;
     }
 
-    .Content-body{
+    .Content-body {
         width: 80%;
         position: relative;
 
-        .Header-Body{
+        .Header-Body {
             height: 10%;
         }
 
-        .Body-Body{
+        .Body-Body {
             height: 90%;
 
-            .List-Music{
+            .List-Music {
                 height: 80%;
                 display: flex;
 
-                .detail-music{
+                .detail-music {
                     width: 40%;
                     height: 100%;
                 }
 
-                .list-music{
+                .list-music {
                     width: 60%;
                     height: 100%;
                 }
             }
 
-            .Play-Music{
+            .Play-Music {
                 height: 20%;
                 display: flex;
                 background-color: black;
 
-                .rhap_container{
+                .rhap_container {
                     background: none !important;
                 }
             }
         }
 
-        .Body-Library{
+        .Body-Library {
             height: 90%;
             overflow: hidden;
             scroll-behavior: smooth;
 
-            .Show-Animation{
+            .Show-Animation {
                 height: 89vh;
                 width: 95%;
                 border: 1px solid wheat;
                 margin-left: 25px;
             }
 
-            .Show-Music{
+            .Show-Music {
                 height: auto;
                 overflow: auto;
                 margin-top: 40px;
@@ -71,9 +71,9 @@
             &::-webkit-scrollbar {
                 width: 15px;
             }
-        
+
         }
 
-        
+
     }
 }

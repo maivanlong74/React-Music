@@ -1,33 +1,46 @@
-
-.Show-Animation{
+.Show-Animation {
     position: relative;
 
-    .List-Img{
+    .List-Img {
         width: 100%;
         height: 100%;
         overflow: hidden;
         position: relative;
-    
-        .Img-Item{
+
+        .backround-rgba {
+            position: absolute;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 990;
+        }
+
+        .Img-Item {
+            width: 100%;
+            height: 100%;
             opacity: 0;
             transition: opacity 0.5s ease-in-out;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
-    
+
         .active {
             opacity: 1 !important;
         }
 
-        .scroll-down{
+        .scroll-down {
             margin-top: 115vh;
             position: absolute;
             width: 94%;
             text-align: center;
             transition: .5s all ease;
-        
-            .icon-scroll{
+            z-index: 991;
+
+            .icon-scroll {
                 background: black;
                 color: wheat;
                 font-size: 40px;
@@ -37,12 +50,60 @@
                 border: 2px solid wheat;
                 cursor: pointer;
             }
+
         }
-    
-        &:hover{
-            .scroll-down{
+
+        &:hover {
+            .scroll-down {
                 margin-top: 70vh;
             }
         }
+
+        .Info-Music {
+            position: absolute;
+            z-index: 992;
+            width: 50%;
+            height: 30%;
+            display: flex;
+            column-gap: 30px;
+            top: 80px;
+            margin-left: 20px;
+            justify-content: left;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 40px;
+            border: 2px solid wheat;
+            transition: .5s all ease;
+
+            .avt-singer {
+                width: 200px;
+                height: 200px;
+                border-radius: 50px;
+                overflow: hidden;
+                border: 2px solid wheat;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .info-singer {
+                text-align: left;
+
+                h1 {
+                    color: yellow;
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: wheat;
+                    font-style: italic;
+                }
+            }
+
+        }
     }
-}   
+}

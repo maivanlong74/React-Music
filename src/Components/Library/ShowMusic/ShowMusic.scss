@@ -1,5 +1,115 @@
-
-.Music-item{
+.Music-item {
     height: 100vh;
     overflow: auto;
+
+    .All-Music-Item {
+        width: 100%;
+        height: 90vh;
+        overflow: auto;
+        list-style: none;
+        margin-left: -40px;
+
+        .List-Music-item {
+            margin-top: 30px;
+            width: 95%;
+            height: 40vh;
+
+            .Music-item-content {
+                display: flex;
+                height: 50px;
+
+                .content-a,
+                .content-b {
+                    width: 50%;
+                }
+
+                .content-a {
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    padding-left: 30px;
+
+                    h1 {
+                        color: white;
+                    }
+                }
+
+                .content-b {
+                    display: flex;
+                    justify-content: right;
+                    align-items: center;
+                    padding-right: 30px;
+
+                    p {
+                        font-size: 15px;
+                        color: white;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .Music-item-list {
+                height: 31vh;
+
+                ul {
+                    height: 100%;
+                    list-style: none;
+                    display: flex;
+                    column-gap: 20px;
+                    overflow: hidden;
+                    flex-wrap: wrap;
+                    margin-left: 50px;
+
+                    li {
+                        border: 1px solid wheat;
+                        width: 30vh;
+                        height: 30vh;
+                        border-radius: 20px;
+                        margin-bottom: 20px;
+
+                        a {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 20px;
+                            text-decoration: none;
+                            overflow: hidden;
+                            position: relative;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+
+                            .name-singer {
+                                position: absolute;
+                                width: 100%;
+                                height: 20%;
+                                background: rgba(0, 0, 0, 0.6);
+                                border-bottom-left-radius: 20px;
+                                border-bottom-right-radius: 20px;
+                                margin-top: -44px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                p {
+                                    color: wheat;
+                                    font-weight: 800;
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .padding-bottom{
+            padding-bottom: 200px;
+        }
+    }
+
 }
